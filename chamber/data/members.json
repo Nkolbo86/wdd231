@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Sunset Café",
+      "address": "123 Sunrise Blvd, Texas, USA",
+      "phone": "555-123-4567",
+      "website": "https://sunsetcafe.com",
+      "image": "sunset-cafe.jpg",
+      "membership": 3,
+      "description": "Family-owned café serving breakfast and lunch since 1995."
+    },
+    {
+      "name": "TechFix Solutions",
+      "address": "456 Tech Ave, Texas, USA",
+      "phone": "555-987-6543",
+      "website": "https://techfix.com",
+      "image": "techfix.jpg",
+      "membership": 2,
+      "description": "Local IT and device repair experts."
+    },
+    {
+      "name": "Bloom Florist",
+      "address": "789 Petal Street, Texas, USA",
+      "phone": "555-321-6789",
+      "website": "https://bloomflorist.com",
+      "image": "bloom.jpg",
+      "membership": 1,
+      "description": "Florist for all your celebrations and events."
+    },
+    {
+      "name": "Lone Star Fitness",
+      "address": "321 Workout Rd, Texas, USA",
+      "phone": "555-888-9999",
+      "website": "https://lonestarfitness.com",
+      "image": "lonestar.jpg",
+      "membership": 2,
+      "description": "Community gym offering classes, equipment, and training."
+    },
+    {
+      "name": "Happy Paws Vet",
+      "address": "654 Pet Lane, Texas, USA",
+      "phone": "555-444-7777",
+      "website": "https://happypawsvet.com",
+      "image": "happypaws.jpg",
+      "membership": 3,
+      "description": "Full-service veterinary clinic."
+    },
+    {
+      "name": "Books & Brews",
+      "address": "111 Cozy Ct, Texas, USA",
+      "phone": "555-222-3333",
+      "website": "https://booksandbrews.com",
+      "image": "booksandbrews.jpg",
+      "membership": 1,
+      "description": "Coffee shop and bookstore combo in the heart of town."
+    },
+    {
+      "name": "Smith & Co. Law",
+      "address": "200 Justice Dr, Texas, USA",
+      "phone": "555-777-1212",
+      "website": "https://smithlaw.com",
+      "image": "smithlaw.jpg",
+      "membership": 2,
+      "description": "Providing legal services to families and businesses."
+    }
+  ]
+  
+  

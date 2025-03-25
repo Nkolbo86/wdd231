@@ -1,0 +1,16 @@
+# Ignore VS Code settings and extensions
+.vscode/
+.vscode/extensions/
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore system files
+*.log
+*.tmp
+
+# Ignore node or Python environment folders if they exist
+node_modules/
+venv/
+__pycache__/

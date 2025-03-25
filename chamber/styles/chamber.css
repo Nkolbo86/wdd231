@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #05668D;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  .view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .view-toggle button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  #directoryContainer {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .list-view {
+    display: block;
+  }
+  
+  .member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f0f3bd;
+    text-align: center;
+  }
+  
+  .member-card img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .member-card a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #028090;
+    text-decoration: none;
+  }
+  
+  .membership-level {
+    font-weight: bold;
+    color: #00A896;
+  }
+  
