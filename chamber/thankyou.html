@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Thank You - Bullard Chamber of Commerce"/>
+  <meta name="author" content="Natalie Kolbo"/>
+
+  <meta property="og:title" content="Thank You - Bullard Chamber"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://nkolbo86.github.io/wdd231/chamber/images/hero.jpg"/>
+  <meta property="og:url" content="https://nkolbo86.github.io/wdd231/chamber/thankyou.html"/>
+
+  <title>Thank You</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/chamber-logo.jpg" alt="Bullard Chamber of Commerce Logo" />
+    <h1>Bullard Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Chamber</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You for Joining!</h2>
+    <p>We’ve received your application. A representative will reach out soon.</p>
+
+    <div id="confirmation-info">
+      <!-- JS will inject submitted form data here -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Natalie Kolbo | Bullard, TX</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

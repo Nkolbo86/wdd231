@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Join the Bullard Area Chamber of Commerce - Membership Application"/>
+  <meta name="author" content="Natalie Kolbo"/>
+
+  <meta property="og:title" content="Join the Chamber of Commerce"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://nkolbo86.github.io/wdd231/chamber/images/hero.jpg"/>
+  <meta property="og:url" content="https://nkolbo86.github.io/wdd231/chamber/join.html"/>
+
+  <title>Join the Chamber</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/modals.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <img src="images/hero.jpg" alt="Chamber Logo" />
+    <h1>Bullard Area Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Chamber</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Join the Chamber of Commerce</h2>
+    <p>Please complete the form below to become a valued member of our community.</p>
+
+    <!-- We'll add the form here next! -->
+    <section class="membership-form-container">
+        <form method="get" action="thankyou.html">
+            <!-- First Name -->
+            <label>
+              First Name:
+              <input type="text" name="firstname" title="First Name" autocomplete="given-name" required />
+            </label>
+          
+            <!-- Last Name -->
+            <label>
+              Last Name:
+              <input type="text" name="lastname" title="Last Name" autocomplete="family-name" required />
+            </label>
+          
+            <!-- Organization Title -->
+            <label>
+              Title/Position:
+              <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+                pattern="[A-Za-z\s\-]{7,}" placeholder="Manager, Owner, Director" />
+            </label>
+          
+            <!-- Email -->
+            <label>
+              Email:
+              <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+          
+            <!-- Phone Number -->
+            <label>
+              Mobile Phone:
+              <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required />
+            </label>
+          
+            <!-- Business/Org Name -->
+            <label>
+              Business / Organization Name:
+              <input type="text" name="organization" title="Business or Organization Name" autocomplete="organization" required />
+            </label>
+          
+            <!-- Membership Level -->
+            <label>
+              Membership Level:
+              <select name="membership" title="Membership Level" required>
+                <option value="">--Please choose an option--</option>
+                <option value="np">NP Membership (Non-Profit, Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+          
+            <!-- Business Description -->
+            <label>
+              Business Description:
+              <textarea name="description" title="Business Description" rows="5" placeholder="Tell us about your organization..."></textarea>
+            </label>
+          
+            <!-- Hidden Timestamp Field -->
+            <input type="hidden" id="timestamp" name="timestamp" />
+          
+            <!-- Submit Button -->
+            <input type="submit" value="Apply for Membership" />
+          </form>
+          
+    </section>
+
+    <!-- We'll add the 4 membership cards here too -->
+    <section class="membership-cards">
+        <section class="membership-cards">
+            <div class="card np">
+              <h3>NP Membership</h3>
+              <p>Perfect for nonprofits. No fee required.</p>
+              <a href="#" data-modal="modal-np">Learn More</a>
+            </div>
+          
+            <div class="card bronze">
+              <h3>Bronze Membership</h3>
+              <p>Basic perks for small businesses and startups.</p>
+              <a href="#" data-modal="modal-bronze">Learn More</a>
+            </div>
+          
+            <div class="card silver">
+              <h3>Silver Membership</h3>
+              <p>Extra exposure and networking opportunities.</p>
+              <a href="#" data-modal="modal-silver">Learn More</a>
+            </div>
+          
+            <div class="card gold">
+              <h3>Gold Membership</h3>
+              <p>Maximum benefits for premier businesses.</p>
+              <a href="#" data-modal="modal-gold">Learn More</a>
+            </div>
+          </section>
+          
+    </section>
+    <dialog id="modal-np">
+        <h4>NP Membership Benefits</h4>
+        <ul>
+          <li>Free membership</li>
+          <li>Event access</li>
+          <li>Community recognition</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </dialog>
+      
+      <dialog id="modal-bronze">
+        <h4>Bronze Membership Benefits</h4>
+        <ul>
+          <li>Access to events</li>
+          <li>Newsletter mention</li>
+          <li>Basic listing in directory</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </dialog>
+      
+      <dialog id="modal-silver">
+        <h4>Silver Membership Benefits</h4>
+        <ul>
+          <li>Event invitations</li>
+          <li>Promotional opportunities</li>
+          <li>Spotlight listing in directory</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </dialog>
+      
+      <dialog id="modal-gold">
+        <h4>Gold Membership Benefits</h4>
+        <ul>
+          <li>All silver benefits</li>
+          <li>Homepage spotlight</li>
+          <li>Custom banner ad</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </dialog>
+      
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Natalie Kolbo | Bullard, TX | USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
