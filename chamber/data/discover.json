@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Bullard City Park",
+      "address": "101 S Houston St, Bullard, TX",
+      "description": "A peaceful community park with walking trails, a playground, and picnic areas.",
+      "image": "bullard-park.jpg"
+    },
+    {
+      "name": "The Woodshed Smokehouse",
+      "address": "215 US-69, Bullard, TX",
+      "description": "Popular BBQ restaurant known for its brisket and local atmosphere.",
+      "image": "woodshed.jpg"
+    },
+    {
+      "name": "Legacy Trails",
+      "address": "Legacy Trail, Bullard, TX",
+      "description": "Scenic trails great for biking, jogging, and photography.",
+      "image": "legacy-trails.jpg"
+    },
+    {
+      "name": "Bullard Museum of History",
+      "address": "150 Main St, Bullard, TX",
+      "description": "Learn about the heritage of Bullard and surrounding East Texas.",
+      "image": "museum.jpg"
+    },
+    {
+      "name": "Eagle's Bluff Golf Course",
+      "address": "700 Eagles Bluff Blvd, Bullard, TX",
+      "description": "Stunning golf course with lake views and excellent facilities.",
+      "image": "golf-course.jpg"
+    },
+    {
+      "name": "Kiepersol Winery",
+      "address": "21508 Merlot Ln, Tyler, TX",
+      "description": "Award-winning local winery and distillery with tours and tastings.",
+      "image": "winery.jpg"
+    },
+    {
+      "name": "Lake Palestine",
+      "address": "Lake Palestine, TX",
+      "description": "A favorite for boating, fishing, and waterfront picnics.",
+      "image": "lake-palestine.jpg"
+    },
+    {
+      "name": "Old Bullard Antiques",
+      "address": "145 E Main St, Bullard, TX",
+      "description": "A treasure trove of unique vintage finds and home décor.",
+      "image": "antiques.jpg"
+    }
+  ]
+  

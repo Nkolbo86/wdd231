@@ -1,186 +1,338 @@
+/* Updated chamber.css using deep blue, black, white, and red color scheme */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header, footer {
+  background-color: #001F3F; /* Deep blue */
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffffff;
+  color: #001F3F;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none;
   }
-  
-  header, footer {
-    background-color: #05668D;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.view-toggle button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #001F3F;
+  color: #ffffff;
+  border: 2px solid #001F3F;
+}
+
+.view-toggle button:hover {
+  background-color: #FF4136;
+  border-color: #FF4136;
+}
+
+#directoryContainer {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.list-view {
+  display: block;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.member-card a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #001F3F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.membership-level {
+  font-weight: bold;
+  color: #FF4136;
+}
+
+.spotlights {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  background-color: #ffffff;
+  border: 2px solid #001F3F;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.spotlight-card img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin: 0.5rem 0;
+}
+
+.spotlight-card a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #001F3F;
+  text-decoration: underline;
+}
+
+.spotlight-card .membership {
+  font-weight: bold;
+  color: #FF4136;
+}
+
+.membership-form-container form {
+  display: grid;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.membership-cards .card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.membership-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.membership-cards .card:nth-child(2) { animation-delay: 0.2s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.3s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 1rem;
-  }
-  
-  .view-toggle {
-    text-align: center;
-    margin: 1rem 0;
-  }
-  
-  .view-toggle button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  #directoryContainer {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .grid-view {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-  
-  .list-view {
-    display: block;
-  }
-  
-  .member-card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #f0f3bd;
-    text-align: center;
-  }
-  
-  .member-card img {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .member-card a {
-    display: block;
-    margin-top: 0.5rem;
-    color: #028090;
-    text-decoration: none;
-  }
-  
-  .membership-level {
-    font-weight: bold;
-    color: #00A896;
-  }
-  
-  .spotlights {
-    padding: 2rem;
-    background-color: #f0f3bd;
-  }
-  
-  #spotlight-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .spotlight-card {
-    background-color: #fff;
-    border: 2px solid #028090;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .spotlight-card img {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-    margin: 0.5rem 0;
-  }
-  
-  .spotlight-card a {
-    display: block;
-    margin-top: 0.5rem;
-    color: #028090;
-    text-decoration: none;
-  }
-  
-  .spotlight-card .membership {
-    font-weight: bold;
-    color: #00A896;
-  }
-  
-  nav a.active {
-    font-weight: bold;
-    color: #028090;
-    border-bottom: 2px solid #028090;
+}
+
+.membership-cards a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #FF4136;
+  text-decoration: underline;
+}
+
+dialog {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close-modal {
+  margin-top: 1rem;
+  background-color: #FF4136;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* === Discover Page Layout === */
+
+.discover-layout {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Grid layout: Small Screens */
+@media (max-width: 640px) {
+  .discover-layout {
+    grid-template-areas:
+      "message"
+      "gallery";
   }
 
-  .membership-form-container form {
-    display: grid;
-    gap: 1rem;
-    max-width: 700px;
-    margin: 2rem auto;
-  }
-  
-  .membership-cards {
-    display: grid;
-    gap: 1rem;
-    margin: 2rem auto;
-    max-width: 1000px;
-  }
-  
-  .membership-cards .card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color: #fff;
-    animation: fadeInUp 1s ease forwards;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .membership-cards .card:nth-child(1) { animation-delay: 0.1s; }
-  .membership-cards .card:nth-child(2) { animation-delay: 0.2s; }
-  .membership-cards .card:nth-child(3) { animation-delay: 0.3s; }
-  .membership-cards .card:nth-child(4) { animation-delay: 0.4s; }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .membership-cards a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #05668D;
-    text-decoration: underline;
+  .visitor-message {
+    grid-area: message;
   }
 
-  dialog {
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    max-width: 400px;
-    width: 90%;
+  .discover-gallery {
+    grid-area: gallery;
   }
-  
-  dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.4);
+
+  .discover-card img:hover {
+    /* No hover effect on mobile */
+    filter: none;
+    transform: none;
   }
-  
-  .close-modal {
-    margin-top: 1rem;
-    background-color: #028090;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
+}
+
+/* Grid layout: Medium Screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-layout {
+    grid-template-areas:
+      "message"
+      "gallery";
   }
-  
+}
+
+/* Grid layout: Large Screens */
+@media (min-width: 1025px) {
+  .discover-layout {
+    grid-template-areas:
+      "message gallery";
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .visitor-message {
+    grid-area: message;
+    padding: 1rem;
+    border: 2px solid #001F3F;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+}
+
+.discover-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.discover-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card h2 {
+  font-size: 1.2rem;
+  color: #001F3F;
+}
+
+.discover-card address {
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discover-card button {
+  background-color: #001F3F;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.discover-card button:hover {
+  background-color: #FF4136;
+}
+
+/* Hover effect on desktop only */
+@media (min-width: 641px) {
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
