@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/main.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .recipe-form-container {
+            display: block; /* Ensure form is visible */
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header, nav, footer {
+            width: 100%;
+            text-align: center;
+            background: #a52a2a;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Submit a Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="add-recipe.html">Submit a Recipe</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="recipe-form-container">
+            <h2>Add a New Recipe</h2>
+            <form id="recipe-form">
+                <label>
+                  Recipe Title:
+                  <input type="text" name="title" required>
+                </label>
+                
+                <label>
+                    Upload a Dish Photo:
+                    <input type="file" name="image" id="image" accept="image/*">
+                </label>                
+              
+                <label>
+                  Short Description:
+                  <input type="text" name="description" required>
+                </label>
+              
+                <label>
+                  Ingredients (one per line):
+                  <textarea name="ingredients" required></textarea>
+                </label>
+              
+                <label>
+                  Instructions:
+                  <textarea name="instructions" required></textarea>
+                </label>
+              
+                <button type="submit">Submit Recipe</button>
+              </form>
+
+              <p id="form-success" class="hidden">🎉 Your recipe has been submitted!</p>
+              
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Family Recipes | Created By Natalie Kolbo | All Rights Reserved</p>
+    </footer>
+    
+    <script src="scripts/form.js" defer></script>
+    </body>
+    </html>
+    

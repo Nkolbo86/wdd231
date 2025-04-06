@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "title": "Grandma's Apple Pie",
+      "image": "images/applepie.jpg",
+      "description": "Warm, flaky, and filled with sweet cinnamon apples.",
+      "ingredients": [
+        "6 apples, peeled and sliced",
+        "1 cup sugar",
+        "2 tbsp cinnamon",
+        "1 tbsp flour",
+        "Pie crust (top and bottom)"
+      ],
+      "instructions": "Preheat oven to 375°F. Mix apples with sugar, cinnamon, and flour. Fill crust, cover with top crust. Bake for 50-60 mins until golden brown."
+    },
+    {
+      "id": 2,
+      "title": "Classic Lasagna",
+      "image": "images/lasagna.jpg",
+      "description": "Layers of pasta, ricotta, meat sauce, and mozzarella.",
+      "ingredients": [
+        "1 lb ground beef",
+        "12 lasagna noodles",
+        "2 cups ricotta",
+        "3 cups mozzarella",
+        "2 cups marinara sauce"
+      ],
+      "instructions": "Cook beef, boil noodles, layer with sauce and cheese. Bake at 375°F for 45 minutes."
+    },
+    {
+      "id": 3,
+      "title": "Chocolate Chip Cookies",
+      "image": "images/cookies.jpg",
+      "description": "Soft and chewy with melty chocolate chips.",
+      "ingredients": [
+        "2 1/4 cups flour",
+        "1 tsp baking soda",
+        "1 cup butter",
+        "3/4 cup sugar",
+        "2 eggs",
+        "2 cups chocolate chips"
+      ],
+      "instructions": "Cream butter and sugar, add eggs, then dry ingredients. Fold in chips. Bake at 350°F for 10-12 minutes."
+    }
+  ]
+  
